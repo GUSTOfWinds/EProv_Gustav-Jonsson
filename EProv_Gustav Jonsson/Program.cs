@@ -33,7 +33,7 @@ namespace EProv_Gustav_Jonsson
                 Mutant MainHero = new Mutant();
             }
 
-            Console.ReadLine();
+            Console.ReadLine(); 
         }
     }
 }
