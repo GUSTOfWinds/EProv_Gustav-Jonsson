@@ -15,7 +15,7 @@ namespace EProv_Gustav_Jonsson
             Console.WriteLine("Please write the name of your hero, then press enter");
             string heroName = Console.ReadLine();
 
-            Console.WriteLine("Welcome to Superhero Academy " + heroName + "!");
+            Console.WriteLine("Welcome to Superhero Academy, " + heroName + "!");
             Console.WriteLine("     ");
 
             Console.ReadLine();
@@ -34,7 +34,6 @@ namespace EProv_Gustav_Jonsson
             }
 
             Console.ReadLine();
-
         }
     }
 }
