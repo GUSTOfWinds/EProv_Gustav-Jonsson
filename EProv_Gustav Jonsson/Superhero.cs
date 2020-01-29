@@ -31,5 +31,11 @@ namespace EProv_Gustav_Jonsson
             int result = generator.Next(0, 5) + intelligence;
             return result;
         }
+
+        public int HeroRank()
+        {
+            int result = strength + dexterity + intelligence;
+            return result;
+        }
     }
 }

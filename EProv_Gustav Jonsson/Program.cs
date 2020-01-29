@@ -10,12 +10,30 @@ namespace EProv_Gustav_Jonsson
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Superhero Academy! What kind of hero would you like to create?");
-            Console.WriteLine("Please select a hero type by typing in the respective number using numerical digits. For example, if you want to make a paragon, type 1 and hit enter");
+            Random generator = new Random();
 
-            Console.WriteLine("1. Paragon: All-Rounded Hero, adept at many things but not excellent at anything either");
-            Console.WriteLine("2. Mutant: A strong and speedy hero type, but lacking in the intellectual side of things");
+            Console.WriteLine("Please write the name of your hero, then press enter");
+            string heroName = Console.ReadLine();
 
+            Console.WriteLine("Welcome to Superhero Academy " + heroName + "!");
+            Console.WriteLine("     ");
+
+            Console.ReadLine();
+
+            int herotype = generator.Next(1, 3);
+
+            if (herotype == 1)
+            {
+                Console.WriteLine(heroName + " is a Paragon!");
+                Paragon MainHero = new Paragon();
+            }
+            if (herotype == 2)
+            {
+                Console.WriteLine(heroName + " is a Mutant!");
+                Mutant MainHero = new Mutant();
+            }
+
+            Console.ReadLine();
 
         }
     }
